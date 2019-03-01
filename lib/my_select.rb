@@ -3,9 +3,9 @@ def my_select(collection)
   s = []
   while i < collection.length
     if yield(collection[i])
-      s << i
+      s << collection[i]
   end
     i = i + 1
   end
-  collection
+  s
 end
