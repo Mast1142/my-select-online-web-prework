@@ -3,8 +3,8 @@ def my_select(collection)
   while i < collection.length
     if yield(collection[i]) == i
     collection.delete(i)
-    i = i + 1
   end
+    i = i + 1
   end
   collection
 end
